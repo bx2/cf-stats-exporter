@@ -2,6 +2,8 @@
 
 Cloudflare analytics exporter for Prometheus/Netdata.
 
+**This repository is for evaluating different programming language implementations. Not intended for production use.**
+
 ## Overview
 
 Polls Cloudflare GraphQL API for HTTP request metrics and exposes them in Prometheus text format on `/metrics`.
