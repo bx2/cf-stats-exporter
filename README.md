@@ -10,7 +10,7 @@ Polls Cloudflare GraphQL API for HTTP request metrics and exposes them in Promet
 
 ## Implementations
 
-This project includes implementations in 7 languages:
+This project includes implementations in 8 languages:
 
 | Language | Lines | Core Logic | Binary Size | Build Command |
 |----------|-------|------------|-------------|---------------|
@@ -21,6 +21,7 @@ This project includes implementations in 7 languages:
 | Go | 156 | ~81 | 5.4 MB | `go build -ldflags="-s -w" -o cf-exporter ./cmd` |
 | Python | 90 | ~56 | N/A | Interpreted |
 | JavaScript | 95 | ~55 | N/A | Interpreted (Node.js 18+) |
+| TypeScript | 106 | ~55 | N/A | Interpreted (Bun) |
 
 ## Configuration
 
@@ -88,6 +89,12 @@ CF_API_TOKEN="..." CF_ZONE_ID="..." python __main__.py
 ```bash
 cd javascript
 CF_API_TOKEN="..." CF_ZONE_ID="..." node src/index.js
+```
+
+### TypeScript
+```bash
+cd typescript
+CF_API_TOKEN="..." CF_ZONE_ID="..." bun run src/index.ts
 ```
 
 ## Assumptions and Limitations
