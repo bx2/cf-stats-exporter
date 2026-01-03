@@ -2,7 +2,10 @@
 
 Cloudflare analytics exporter for Prometheus/Netdata.
 
-**This repository is for evaluating different programming language implementations. Not intended for production use.**
+**This repository is made for me only. I use it to help me evaluate different
+programming language implementations but more importantly how much more
+productive I get by using all the syntax sugar available. This code is
+not safe, not tested, and not intended for production use, ever.**
 
 ## Overview
 
